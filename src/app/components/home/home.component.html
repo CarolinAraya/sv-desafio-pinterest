@@ -35,4 +35,56 @@
     </div>
     <hr class="mt-1">
   </nav>
+  <div class="container">
+    <div class="row">
+    </div>
+    <div class="button-float">
+      <i class="fas fa-plus btnPin d-flex mb-2" data-toggle="modal" data-target="#exampleModalCenter"></i>
+      <i class="fas fa-question btnPin mb-5 d-flex"></i>
+    </div>
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered w-75" role="document">
+        <div class="modal-content">
+          <div class="modal-header d-block text-center">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+            <h5 class="modal-title titleAddPinModal" id="exampleModalVerticalLabel">Crear Pin</h5>
+          </div>
+          <div class="modal-body">
+            <div class="row">
+              <div class="col-4">
+                <div class="boxUpPin">
+                  <p class="text-center"><i class="fas fa-camera"></i><br>Arratras y suelta o haz click para cargar </p>
+                </div>
+              </div>
+              <div class="col-7 px-4">
+                <form>
+                  <div class="form-group">
+                    <label class="titleInputModal">Sitio Web</label>
+                    <input type="text" class="form-control" placeholder="Añade la URL con la que enlazas este pin">
+                  </div>
+                  <div class="form-group">
+                    <label class="titleInputModal">Descripcion</label>
+                    <textarea class="form-control textareaSize" placeholder="Di algo más sobre este pin"></textarea>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <div class="col-6 container-buttons-pin">
+              <button type="button" class="btn button-modal">Cargar Pin</button>
+              <button type="button" class="btn button-modal">Guardar desde este sitio</button>
+            </div>
+            <div class="col-6 text-right">
+              <button type="button" class="btn btn-ligth">Listo</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>

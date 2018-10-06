@@ -18,11 +18,13 @@ import {
   MatSortModule, MatStepperModule, MatTableModule, MatTooltipModule, MatMenuTrigger,
   MatPaginatorIntl, MatBadgeModule, MatBottomSheetModule, MatTreeModule, ErrorStateMatcher, ShowOnDirtyErrorStateMatcher,
 } from '@angular/material';
+import { FloatsModalComponent } from './components/floats-modal/floats-modal.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
+    FloatsModalComponent,
   ],
   imports: [
     BrowserModule,
