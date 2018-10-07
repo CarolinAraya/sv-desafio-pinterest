@@ -10,9 +10,16 @@ img {
     border-radius: 7px;
 }
 
+.mat-card:hover {
+  background-color: rgba(240, 240, 240, 0.589);
+}
 .mat-card-footer {
   display: block;
   margin: 0 -24px -24px -24px;
   text-align: right;
   margin: 0;
+}
+
+.mat-card:not([class*=mat-elevation-z]) {
+  box-shadow: 0 0 0 0;
 }
