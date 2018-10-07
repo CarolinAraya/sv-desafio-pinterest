@@ -7,6 +7,7 @@ import { HomeComponent } from './components/home/home.component';
 //mis componentes
 import { StartComponent } from './components/start/start.component';
 import { ImageDetailComponent } from './components/images/image-detail.component';
+import { ComentFormComponent } from './components/coments/coment-form.component'
 
 //material
 import { CdkTableModule } from '@angular/cdk/table';
@@ -28,7 +29,8 @@ import {
     AppComponent,
     HomeComponent,
     StartComponent,
-    ImageDetailComponent
+    ImageDetailComponent,
+    ComentFormComponent
   ],
   imports: [
     BrowserModule,

@@ -1,0 +1,7 @@
+<form>
+  <mat-form-field>
+    <textarea matInput placeholder="Respuesta" name="description" #textA >
+    </textarea>
+  </mat-form-field>
+  <button type="submit" mat-raised-buttoncolor="accent" (click)="onSubmit(textA.value)">Responder</button>
+</form>
