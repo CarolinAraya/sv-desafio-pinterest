@@ -3,7 +3,8 @@ import { Image } from './image.model';
 
 @Component({
   selector: 'app-image-detail',
-  templateUrl: './image-detail.component.html'
+  templateUrl: './image-detail.component.html',
+  styleUrls: ['./image-detail.component.css']
 })
 
 export class ImageDetailComponent {
