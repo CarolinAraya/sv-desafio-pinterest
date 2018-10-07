@@ -2,3 +2,17 @@ img {
   max-height: 500px;
   border-radius: 10px;
 }
+.mat-card {
+  cursor: zoom-in;
+    padding: 8px;
+    position: relative;
+    display: table-cell;
+    border-radius: 7px;
+}
+
+.mat-card-footer {
+  display: block;
+  margin: 0 -24px -24px -24px;
+  text-align: right;
+  margin: 0;
+}
