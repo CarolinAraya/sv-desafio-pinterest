@@ -7,11 +7,13 @@ import { HomeComponent } from './components/home/home.component';
 //mis componentes
 import { StartComponent } from './components/start/start.component';
 import { ImageDetailComponent } from './components/images/image-detail.component';
-import { ComentFormComponent } from './components/coments/coment-form.component'
+import { ComentFormComponent} from './components/coments/coment-form.component'
+
 
 //material
 import { CdkTableModule } from '@angular/cdk/table';
 import { CdkTreeModule } from '@angular/cdk/tree';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {
   MAT_DIALOG_DEFAULT_OPTIONS,
   MatSlideToggleModule, MatButtonToggleModule, MatCardModule, MatButtonModule, MatToolbarModule,
@@ -30,10 +32,11 @@ import {
     HomeComponent,
     StartComponent,
     ImageDetailComponent,
-    ComentFormComponent
-  ],
+    ComentFormComponent],
+
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     CdkTableModule, CdkTreeModule,
     MatChipsModule, MatDialogModule, MatDividerModule, MatTooltipModule,
     MatExpansionModule, MatListModule, MatNativeDateModule,
@@ -44,7 +47,11 @@ import {
     MatButtonModule, MatCardModule, MatToolbarModule, MatAutocompleteModule,
     MatCheckboxModule, MatIconModule, MatMenuModule, MatSelectModule, MatDatepickerModule,
     MatRadioModule, MatSliderModule, MatTabsModule, MatBadgeModule, MatBottomSheetModule,
-    MatTreeModule
+    MatTreeModule,
+
+  ],
+  entryComponents: [
+    ComentFormComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

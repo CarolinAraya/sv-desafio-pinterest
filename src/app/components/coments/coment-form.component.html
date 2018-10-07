@@ -1,7 +1,16 @@
-<form>
-  <mat-form-field>
-    <textarea matInput placeholder="Respuesta" name="description" #textA >
-    </textarea>
-  </mat-form-field>
-  <button type="submit" mat-raised-buttoncolor="accent" (click)="onSubmit(textA.value)">Responder</button>
-</form>
+<mat-card>
+  <mat-dialog-content>
+    <img src="{{image.urlPhoto}}" alt="">
+    <form>
+      <mat-form-field>
+        <textarea matInput placeholder="Respuesta" name="description" #textA>
+        </textarea>
+      </mat-form-field>
+      <button type="submit" mat-raised-buttoncolor="accent" (click)="onSubmit(textA.value)">Responder</button>
+    </form>
+  </mat-dialog-content>
+</mat-card>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial>Install</button>
+</mat-dialog-actions>
