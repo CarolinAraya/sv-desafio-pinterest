@@ -1,3 +1,5 @@
+import { Coment } from '../coments/coment.model'
+
 export class Image {
   id: string;
   nameAuthor: string;
