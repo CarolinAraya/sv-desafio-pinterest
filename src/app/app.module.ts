@@ -4,6 +4,10 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 
+//mis componentes
+import { StartComponent } from './components/start/start.component';
+import { ImageDetailComponent } from './components/images/image-detail.component';
+
 //material
 import { CdkTableModule } from '@angular/cdk/table';
 import { CdkTreeModule } from '@angular/cdk/tree';
@@ -18,13 +22,13 @@ import {
   MatSortModule, MatStepperModule, MatTableModule, MatTooltipModule, MatMenuTrigger,
   MatPaginatorIntl, MatBadgeModule, MatBottomSheetModule, MatTreeModule, ErrorStateMatcher, ShowOnDirtyErrorStateMatcher,
 } from '@angular/material';
-import { StartComponent } from './components/start/start.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     StartComponent,
+    ImageDetailComponent
   ],
   imports: [
     BrowserModule,
