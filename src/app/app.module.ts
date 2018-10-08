@@ -1,13 +1,14 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { HttpModule} from '@angular/http'
 
 import { AppComponent } from './app.component';
 import { HomeComponent } from './components/home/home.component';
 
 //mis componentes
-import { StartComponent } from './components/start/start.component';
 import { ImageDetailComponent } from './components/images/image-detail.component';
-import { ComentFormComponent} from './components/coments/coment-form.component'
+import { ComentFormComponent} from './components/coments/coment-form.component';
+import { ImageApiService } from './services/image-api.service'
 
 
 //material
@@ -30,7 +31,6 @@ import {
   declarations: [
     AppComponent,
     HomeComponent,
-    StartComponent,
     ImageDetailComponent,
     ComentFormComponent],
 
@@ -48,12 +48,13 @@ import {
     MatCheckboxModule, MatIconModule, MatMenuModule, MatSelectModule, MatDatepickerModule,
     MatRadioModule, MatSliderModule, MatTabsModule, MatBadgeModule, MatBottomSheetModule,
     MatTreeModule,
+    HttpModule
 
   ],
   entryComponents: [
     ComentFormComponent
   ],
-  providers: [],
+  providers: [ImageApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
