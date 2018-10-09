@@ -120,6 +120,11 @@
 
 } */
 
+.no-column {
+  column-count: 4;
+  column-gap: 1em;
+}
+
 .container-fluid {
   width: 95%;
 }
@@ -140,6 +145,9 @@ border-radius: 0px;
   padding: 0 4px;
 }
 
-.space-component {
+.image-container {
 margin:7px;
+display: inline-block;
+margin: 0 0 1em;
+width: 100%;
 }

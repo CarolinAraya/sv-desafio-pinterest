@@ -9,6 +9,7 @@ import { ImageApiService } from '../../services/image-api.service'
 export class HomeComponent implements OnInit {
   images: Image[];
   searching : boolean = true;
+  searchQuery : string;
 
   handleSuccess(data) {
     this.images = data.hits;
