@@ -116,10 +116,13 @@
 	margin-top: 50px;
 }
 
-.container-buttons-pin {
+/* .container-buttons-pin {
 
+} */
+
+.container-fluid {
+  width: 95%;
 }
-
 
 .modal-footer{
 	justify-content: start !important;

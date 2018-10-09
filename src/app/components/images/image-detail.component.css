@@ -1,7 +1,10 @@
 img {
-  max-height: 220px;
+  max-width: 280px;
   border-radius: 10px;
+
 }
+
+
 .mat-card {
   cursor: zoom-in;
     padding: 8px;

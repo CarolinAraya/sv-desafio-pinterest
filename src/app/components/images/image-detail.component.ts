@@ -26,7 +26,7 @@ export class ImageDetailComponent {
  */
   openDialog() {
     let dialogRef = this.dialog.open(ComentFormComponent, {
-      //urlPhoto: 'hola'
+      data : this.image.webformatURL//urlPhoto: 'hola'
     });
 
     dialogRef.afterClosed().subscribe(result => {

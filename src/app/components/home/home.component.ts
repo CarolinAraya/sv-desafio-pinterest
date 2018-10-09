@@ -38,7 +38,7 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.renderImage('sky');
+    this.renderImage('monkey');
   }
 
 }

@@ -10,15 +10,7 @@ import { MAT_DIALOG_DATA } from '@angular/material';
 })
 
 export class ComentFormComponent {
-  constructor(public dialogRef: MatDialogRef<ComentFormComponent>, @Inject(MAT_DIALOG_DATA) public urlPhoto: string) { }
-
-/*   image: Image = new Image(
-    "01",
-    "watherhouse",
-    "Iron Fist",
-    "Ilustration",
-    "https://i.pinimg.com/originals/11/df/72/11df72cda9b3fef6b496371be5772559.jpg"
-  ) */
+  constructor(public dialogRef: MatDialogRef<ComentFormComponent>, @Inject(MAT_DIALOG_DATA) public data: any) { }
 
   onSubmit(textArea: string) {
     event.preventDefault();
