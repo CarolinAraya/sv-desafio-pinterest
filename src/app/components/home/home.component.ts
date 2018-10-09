@@ -8,12 +8,10 @@ import { ImageApiService } from '../../services/image-api.service'
 })
 export class HomeComponent implements OnInit {
   images: Image[];
-  imagesFound: boolean = false;
-  searching : boolean = false;
+  searching : boolean = true;
 
   handleSuccess(data) {
     this.images = data.hits;
-    this.imagesFound = true;
     console.log(data.hits);
   }
 
@@ -27,12 +25,20 @@ export class HomeComponent implements OnInit {
     return this.imageApiService.getImage(query).subscribe(
       data => this.handleSuccess(data),
       error => this.handleError(error),
-      () => this.searching = false,
+      () => this.searching = true,
       //() => console.log("Request Completado!!")
     )
   }
 
+  renderImage(query: string) {
+    return this.imageApiService.getImage(query).subscribe(
+      data => this.handleSuccess(data),
+      error => this.handleError(error),
+    )
+  }
+
   ngOnInit() {
+    this.renderImage('samurai');
   }
 
 }
