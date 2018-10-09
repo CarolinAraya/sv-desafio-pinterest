@@ -37,8 +37,10 @@
   <div class="container">
     <div class="row header-space">
     </div>
-    <div class="row">
-        <app-image-detail *ngFor="let image of images" [image]="image"></app-image-detail>
+    <div class="row ">
+      <div class="row-column">
+          <app-image-detail class="space-component" *ngFor="let image of images" [image]="image"></app-image-detail>
+      </div>
     </div>
     <div class="button-float">
       <i class="fas fa-plus btnPin d-flex mb-2" data-toggle="modal" data-target="#exampleModalCenter"></i>
@@ -51,7 +53,7 @@
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
-            <h5 class="modal-title titleAddPinModal" id="exampleModalVerticalLabel">Crear Pin</h5>
+            <h5 class="modal-title titleAddPinModal" id="exampleModalVerticalLabel">Crear Pin // En proceso...</h5>
           </div>
           <div class="modal-body">
             <div class="row">
@@ -59,7 +61,7 @@
                 <div class="boxUpPin">
                   <p class="text-center">
                     <i class="fas fa-camera"></i>
-                    <br>Arratras y suelta o haz click para cargar </p>
+                    <br>//En proceso...  Arratras y suelta o haz click para cargar </p>
                 </div>
               </div>
               <div class="col-7 px-4">

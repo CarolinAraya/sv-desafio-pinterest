@@ -1,5 +1,5 @@
 img {
-  max-height: 300px;
+  max-height: 220px;
   border-radius: 10px;
 }
 .mat-card {
@@ -8,6 +8,7 @@ img {
     position: relative;
     display: table-cell;
     border-radius: 7px;
+    margin: 10px;
 }
 
 .mat-card:hover {
@@ -26,4 +27,16 @@ img {
 
 .mat-icon-button {
   color: gray;
+}
+
+.column {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+  max-width: 25%;
+  padding: 0 4px;
+}
+
+.column img {
+  margin-top: 8px;
+  vertical-align: middle;
 }

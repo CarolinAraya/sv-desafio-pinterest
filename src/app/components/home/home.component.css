@@ -128,3 +128,15 @@
 .button-modal {
 border-radius: 0px;
 }
+
+.row-column {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  padding: 0 4px;
+}
+
+.space-component {
+margin:7px;
+}
