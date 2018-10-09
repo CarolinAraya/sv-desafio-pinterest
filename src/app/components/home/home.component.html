@@ -11,7 +11,7 @@
           </div>
         </div>
         <input type="text" class="form-control searchNav border-0" placeholder="Buscar" [(ngModel)]="searchQuery">
-        <button type="button" class="button" (click)="searchImages(searchQuery)">Inicio</button>
+        <button type="button" class="button" (click)="searchImages(searchQuery)">Buscar</button>
         <button type="button" class="button">Inicio</button>
         <button type="button" class="button">Siguiendo</button>
         <button type="button" class="button">Carolina</button>
@@ -39,7 +39,7 @@
     </div>
     <div class="row">
       <div class="col-12">
-        <app-image-detail></app-image-detail>
+        <app-image-detail *ngFor="let image of images" [image]="image"></app-image-detail>
       </div>
     </div>
     <div class="button-float">
@@ -91,6 +91,5 @@
         </div>
       </div>
     </div>
-
   </div>
 </div>
