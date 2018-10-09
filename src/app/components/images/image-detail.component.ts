@@ -12,21 +12,25 @@ import { Image } from '../home/home.component';
 })
 
 export class ImageDetailComponent {
- @Input() image: Image;
+  @Input() image: Image;
 
   constructor(public matDialog: MatDialogModule, public dialog: MatDialog) { }
 
-/*   image: Image = new Image(
-    "01",
-    "watherhouse",
-    "Iron Fist",
-    "Ilustration",
-    "https://i.pinimg.com/originals/11/df/72/11df72cda9b3fef6b496371be5772559.jpg"
-  )
- */
+  /*   image: Image = new Image(
+      "01",
+      "watherhouse",
+      "Iron Fist",
+      "Ilustration",
+      "https://i.pinimg.com/originals/11/df/72/11df72cda9b3fef6b496371be5772559.jpg"
+    )
+   */
   openDialog() {
     let dialogRef = this.dialog.open(ComentFormComponent, {
-      data : this.image.webformatURL//urlPhoto: 'hola'
+      data: {
+        imageURL: this.image.webformatURL,
+        nameImage: this.image.user
+      }
+      //urlPhoto: 'hola'
     });
 
     dialogRef.afterClosed().subscribe(result => {

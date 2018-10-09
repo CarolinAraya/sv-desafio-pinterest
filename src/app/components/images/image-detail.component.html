@@ -1,10 +1,16 @@
 <mat-card>
-  <img [src]="image.webformatURL" (click)="openDialog()" >
+  <img [src]="image.webformatURL" (click)="openDialog()">
   <mat-card-footer>
-    <button mat-icon-button class="button-icon">
-      <mat-icon>
-        more_horiz
-      </mat-icon>
-    </button>
+    <div  style="display:inline-block; width: 85%;">
+      <b class=" name">{{image.user}}</b>
+    </div>
+    <div style="display:inline-block">
+      <button mat-icon-button class="button-icon">
+        <mat-icon>
+          more_horiz
+        </mat-icon>
+      </button>
+    </div>
+
   </mat-card-footer>
 </mat-card>

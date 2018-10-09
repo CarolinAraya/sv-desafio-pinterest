@@ -4,7 +4,13 @@ img {
 
 }
 
-
+.name {
+  font-size: 13px;
+  font-weight: 750;
+  margin-top: 8px;
+  color: #4a4a4a;
+  margin-left: 9px;
+}
 
 .mat-card {
   cursor: zoom-in;
@@ -21,7 +27,6 @@ img {
 .mat-card-footer {
   display: block;
   margin: 0 -24px -24px -24px;
-  text-align: right;
   margin: 0;
 }
 
