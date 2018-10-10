@@ -1,0 +1,10 @@
+{
+  "hosting": {
+    "public": "dist/sv-pinterest",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ]
+  }
+}
