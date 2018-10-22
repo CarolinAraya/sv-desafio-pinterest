@@ -17,3 +17,8 @@
   min-height: inherit;
   max-height: inherit;
 }
+
+.cdk-overlay-container {
+  position: fixed;
+  z-index: 10000;
+}
